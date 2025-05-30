@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Layanan - PT Shinta Kazuki System</title>
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #dc3545; /* Merah Bootstrap */
+      color: white;
+      padding: 1rem 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .brand img {
+      width: 40px;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    .nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-links li a:hover {
+      text-decoration: underline;
+    }
+
+    .services-section {
+  padding: 5rem 20px;
+  background: #f9f9f9;
+  font-family: 'Poppins', sans-serif;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #764ba2;
+  margin-bottom: 3rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.service-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.1);
+}
+
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.service-card h2 {
+  color: #dc3545;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.service-card p {
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 4rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">
+          <img src="Logo.jpg" alt="Logo" />
+          <div class="logo">PT.SHINTA KAZUKI SYSTEM</div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Layanan -->
+  <section class="services-section">
+  <div class="container">
+    <h1 class="section-title">Layanan Kami</h1>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="icon">📘</div>
+        <h2>Pelatihan</h2>
+        <p>
+          Pelatihan IT intensif dan berkualitas untuk pelajar, guru, dan profesional. Materi meliputi Web Development, Microsoft Office, Desain Grafis, dan lainnya.
+        </p>
+      </div>
+      <div class="service-card">
+        <div class="icon">🛠️</div>
+        <h2>Workshop</h2>
+        <p>
+          Workshop singkat & interaktif untuk meningkatkan skill peserta. Cocok untuk sekolah, kampus, dan instansi secara praktis & menyenangkan.
+        </p>
+      </div>
+      <div class="service-card">
+        <div class="icon">💻</div>
+        <h2>Pengembangan Software</h2>
+        <p>
+          Jasa pembuatan aplikasi web/desktop: absensi, sistem sekolah, website profil, e-learning, dan solusi digital lainnya sesuai kebutuhan.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 PT Shinta Kazuki System. All rights reserved.
+  </footer>
+
+</body>
+</html>

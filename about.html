@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tentang Kami - PT Shinta Kazuki System</title>
+  <!-- Google Fonts: Poppins -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+   body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+}
+
+    header {
+  background-color: #dc3545; /* Merah Bootstrap */
+  color: white;
+  padding: 1rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+
+    .about-section {
+      padding: 4rem 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 1000px;
+      margin: 3rem auto;
+    }
+
+    .about-section h1 {
+      color: #333;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .about-section p {
+      line-height: 1.8;
+      color: #444;
+      margin-bottom: 1rem;
+    }
+
+    .about-section h2 {
+      color: #764ba2;
+      margin-top: 2rem;
+    }
+
+    .about-section ul {
+      padding-left: 1.5rem;
+      line-height: 1.8;
+    }
+    .tabel-layanan {
+  padding: 4rem 20px;
+  background: #f9f9f9;
+  font-family: 'Poppins', sans-serif;
+}
+
+.tabel-layanan .container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.tabel-layanan h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #4b82a2;
+  margin-bottom: 2rem;
+}
+
+.tabel-layanan table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.tabel-layanan th, .tabel-layanan td {
+  padding: 1.2rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  vertical-align: top;
+}
+
+.tabel-layanan thead {
+  background-color: #764ba2;
+  color: white;
+}
+
+.tabel-layanan tbody tr:hover {
+  background-color: #f3f3f3;
+}
+
+.tabel-layanan td:first-child {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.budaya-section {
+  padding: 4rem 20px;
+  background-color: #f9f9f9;
+  font-family: 'Poppins', sans-serif;
+}
+
+.budaya-section h2 {
+  text-align: center;
+  color: #764ba2;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.tabel-budaya {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.tabel-budaya th, .tabel-budaya td {
+  padding: 1rem 1.2rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.tabel-budaya thead {
+  background-color: #764ba2;
+  color: white;
+}
+
+.tabel-budaya tbody tr:hover {
+  background-color: #f3f3f3;
+}
+
+.tabel-budaya td:first-child {
+  width: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 4rem;
+    }
+    
+    .budaya-section {
+  padding: 4rem 20px;
+  background-color: #f9f9f9;
+  font-family: 'Poppins', sans-serif;
+}
+
+.budaya-section h2 {
+  text-align: center;
+  color: #764ba2;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.tabel-budaya {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.tabel-budaya th, .tabel-budaya td {
+  padding: 1rem 1.2rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.tabel-budaya thead {
+  background-color: #764ba2;
+  color: white;
+}
+
+.tabel-budaya tbody tr:hover {
+  background-color: #f3f3f3;
+}
+
+.tabel-budaya td:first-child {
+  width: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+.budaya-section {
+  padding: 4rem 20px;
+  background-color: #f9f9f9;
+  font-family: 'Poppins', sans-serif;
+}
+
+.budaya-section h2 {
+  text-align: center;
+  color: #764ba2;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.tabel-budaya {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.tabel-budaya th, .tabel-budaya td {
+  padding: 1rem 1.2rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.tabel-budaya thead {
+  background-color: #764ba2;
+  color: white;
+}
+
+.tabel-budaya tbody tr:hover {
+  background-color: #f3f3f3;
+}
+
+.tabel-budaya td:first-child {
+  width: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+.visi-misi-elegan {
+  padding: 5rem 20px;
+  background: linear-gradient(135deg, #f7f7fb 0%, #ffffff 100%);
+  font-family: 'Poppins', sans-serif;
+}
+
+.judul-section {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #4c2882;
+  margin-bottom: 3rem;
+}
+
+.visi-misi-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.card-visi, .card-misi {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.card-visi:hover, .card-misi:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.icon-visi {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #dc3545;
+}
+
+.card-visi h3, .card-misi h3 {
+  color: #764ba2;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.card-visi p, .card-misi ol {
+  color: #444;
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+.card-misi ol {
+  padding-left: 1.2rem;
+  margin-top: 1rem;
+}
+
+.card-misi li {
+  margin-bottom: 0.7rem;
+}
+
+.nilai-section {
+  background-color: #f9f9f9;
+  padding: 4rem 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nilai-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #764ba2;
+  margin-bottom: 3rem;
+}
+
+.bubble-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bubble-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.bubble-card:hover {
+  transform: translateY(-6px);
+}
+
+.bubble-card h4 {
+  font-size: 1.1rem;
+  color: #dc3545;
+  margin-bottom: 0.7rem;
+}
+
+.bubble-card p {
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+ <header>
+  <div class="container">
+    <nav>
+      <div class="brand">
+        <img src="Logo.jpg" alt="Logo" style="width: 40px;" />
+        <div class="logo">PT.SHINTA KAZUKI SYSTEM</div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  </header>
+
+  <!-- Konten About -->
+  <main>
+    <!--jasa dan pelatihan-->
+    <section class="tentang-sinar">
+  <section class="tabel-layanan">
+  <div class="container">
+    <h2>Jasa & Pelatihan</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Icon</th>
+          <th>Layanan</th>
+          <th>Deskripsi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>💻</td>
+          <td>Kursus Komputer</td>
+          <td>Kursus online dan privat untuk semua kalangan: Microsoft Office, desain grafis, hingga coding dasar.</td>
+        </tr>
+        <tr>
+          <td>🌐</td>
+          <td>Pembuatan Website</td>
+          <td>Jasa pembuatan website profesional untuk bisnis, sekolah, hingga personal branding.</td>
+        </tr>
+        <tr>
+          <td>🎨</td>
+          <td>Desain 2D / 3D</td>
+          <td>Desain kreatif dan modern untuk logo, brosur, animasi, hingga presentasi 3D.</td>
+        </tr>
+        <tr>
+          <td>🖥️</td>
+          <td>Jual Beli Laptop Second</td>
+          <td>Penyediaan laptop bekas berkualitas yang sudah dicek performanya, siap pakai dengan harga terjangkau.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+<!--Bagian Budaya-->
+<section class="budaya-section">
+  <div class="container">
+    <h2><i class="fa fa-users"></i> Budaya Perusahaan</h2>
+    <table class="tabel-budaya">
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Aspek Budaya</th>
+          <th>Deskripsi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Prioritas Ibadah</td>
+          <td>Kami memberi keleluasaan untuk ibadah wajib dan sunah, sebagai bagian dari integritas spiritual dan tanggung jawab kepada Allah SWT.</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Keselamatan Kerja</td>
+          <td>Prinsip 'Safety First' kami terapkan demi menyediakan lingkungan kerja yang aman, sehat, dan kondusif bagi seluruh karyawan.</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Mutu & Kualitas Produk</td>
+          <td>Kami menjunjung kualitas tertinggi dalam setiap produk dan layanan, dengan proses teliti dan berorientasi pada kepuasan pelanggan.</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Profesionalisme</td>
+          <td>Etika kerja tinggi, tanggung jawab, dan kedisiplinan menjadi bagian tak terpisahkan dari budaya kerja kami.</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Kerjasama Tim</td>
+          <td>Kami membangun sinergi melalui saling menghargai, komunikasi terbuka, dan semangat gotong royong.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+<!--Visi & Misi-->
+<section class="visi-misi-elegan">
+  <div class="container">
+    <h2 class="judul-section">Visi & Misi PT. SHINTA KAZUKI SYSTEM</h2>
+    <div class="visi-misi-wrapper">
+      <div class="card-visi">
+        <div class="icon-visi">🌟</div>
+        <h3>Visi Kami</h3>
+        <p>
+          Menjadi perusahaan startup teknologi berbasis syariah terdepan di Indonesia yang unggul dalam pengembangan software, pelatihan digital, dan inovasi aplikasi, dengan komitmen terhadap profesionalisme, kualitas tinggi, dan nilai-nilai tanpa riba, untuk menciptakan ekosistem teknologi yang berdaya saing global pada tahun 2030.
+        </p>
+      </div>
+
+      <div class="card-misi">
+        <div class="icon-visi">🎯</div>
+        <h3>Misi Kami</h3>
+        <ol>
+          <li>Mengembangkan solusi software dan aplikasi yang inovatif, efisien, dan sesuai kebutuhan pasar industri digital.</li>
+          <li>Menyelenggarakan pelatihan, workshop, bootcamp, seminar, dan webinar berkualitas untuk mencetak talenta digital profesional.</li>
+          <li>Mendorong sistem kerja berbasis syariah dan bebas riba dalam operasional perusahaan.</li>
+          <li>Menjadi mitra strategis dalam transformasi digital bagi individu, UMKM, dan korporasi.</li>
+          <li>Mewujudkan budaya kerja profesional, akuntabel, dan kolaboratif.</li>
+          <li>Meningkatkan mutu berkelanjutan untuk menjadi pemimpin pasar nasional di bidang software dan pelatihan digital pada tahun 2030.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Nilai Inti-->
+<section class="nilai-section">
+  <div class="container">
+    <h2>Nilai-Nilai yang Kami Junjung</h2>
+    <div class="bubble-grid">
+      <div class="bubble-card">
+        <h4>🕌 Integritas Syariah</h4>
+        <p>Menjunjung tinggi prinsip-prinsip syariah Islam, menjauhi riba dan menjaga etika kerja yang amanah.</p>
+      </div>
+      <div class="bubble-card">
+        <h4>💼 Profesionalisme</h4>
+        <p>Berkomitmen pada mutu kerja tinggi, disiplin waktu, dan tanggung jawab dalam pelayanan.</p>
+      </div>
+      <div class="bubble-card">
+        <h4>💡 Inovasi Berkelanjutan</h4>
+        <p>Selalu mengembangkan ide dan teknologi terbaru yang relevan dan bernilai tinggi.</p>
+      </div>
+      <div class="bubble-card">
+        <h4>🎓 Pemberdayaan SDM</h4>
+        <p>Pelatihan dan pengembangan talenta digital berbasis kebutuhan industri.</p>
+      </div>
+      <div class="bubble-card">
+        <h4>🤝 Kolaborasi & Kebersamaan</h4>
+        <p>Kerja sama yang kuat antar tim, klien, dan mitra dengan semangat transparansi.</p>
+      </div>
+      <div class="bubble-card">
+        <h4>🏆 Komitmen Kualitas</h4>
+        <p>Fokus pada standar tinggi dalam setiap layanan dan produk menuju visi 2030.</p>
+      </div>
+      <div class="bubble-card">
+        <h4>🌍 Kebermanfaatan Sosial</h4>
+        <p>Memberi dampak nyata ke masyarakat lewat edukasi dan teknologi yang inklusif.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  </main>
+  
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 PT Shinta Kazuki System. All rights reserved.
+  </footer>
+
+</body>
+</html>
